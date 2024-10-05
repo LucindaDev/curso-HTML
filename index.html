@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Esta pagina web se enfoca en practicas de html y css.">
+    <meta name="keywords" content="Lucinda, LucindaDev, Estudiante, Desarrollo web">
+    <meta name="author" content="Lucinda Dominguez">
+    <title>HTML Curso Lucinda</title>
+    <link rel="icon" href="/public/favicon3.ico">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1>Encabezado!!</h1>
+
+    <h2>Sección 1: Texto y enlace.</h2>
+    <div class="principal">
+        <h2>Subtítulo</h2>
+        <p>Lorem <strong>ipsum</strong> dolor sit amet consectetur adipisicing elit. Itaque accusamus ut quo consectetur
+            ipsum atque nulla eos! Impedit odit nesciunt delectus assumenda excepturi, totam ab illum, explicabo rem
+            ullam aperiam?</p>
+        <a href="https://github.com/LucindaDev?tab=repositories" class="enlace" target="_blank">Enlace a mi GitHub!</a>
+        <!-- "_blank" Se utiliza para abrir un enlace en otra pestaña. -->
+    </div>
+
+    <h2>Sección 2: Lista.</h2>
+    <div>
+        <ol class="lista">
+            <li>Gato</li>
+            <li>Perro</li>
+            <li>Caballo</li>
+            <li>Capibara</li>
+            <li>Lobo</li>
+            <li>Nutria</li>
+        </ol>
+    </div>
+
+    <h2>Sección 3: Imagen.</h2>
+    <div>
+        <img class="fotoPerfil1" src="/public/FotoPerfil.webp" alt="fotoPerfil1">
+    </div>
+
+    <h2>Sección 4: Formulario.</h2>
+    <div>
+        <form class="formulario">
+            <!--SIMPLE INPUTS-->
+            <h3 class="formTitle">Formulario de usuario</h3>
+            <fieldset>
+                <legend>INFORMACIÓN PERSONAL</legend>
+                <div>
+                    <label>Nombre y Apellido</label>
+                    <input class="formularioInput" type="text" name="username" minlength="3"
+                        placeholder="Ej. Lucy Dominguez">
+                </div>
+                <div>
+                    <label>Edad</label>
+                    <input type="number" class="formularioInput" placeholder="Ej. 22">
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>CREACIÓN DE CUENTA</legend>
+                <div>
+                    <label>Email</label>
+                    <input class="formularioInput" type="email" name="email" placeholder="ejemplo@gmail.com">
+                </div>
+                <div>
+                    <label>Contraseña</label>
+                    <input class="formularioInput" type="password" name="password"
+                        placeholder="Debe tener al menos 8 caracteres" required>
+                </div>
+                <div>
+                    <label>Confirmar contraseña</label>
+                    <input class="formularioInput" type="password" name="password"
+                        placeholder="Debe coincidir con la contraseña anterior" required>
+                </div>
+            </fieldset>
+            <!--DATE & FILE INPUTS-->
+            <fieldset>
+                <legend>SELECCIÓN DE DATOS</legend>
+                    <div>
+                        <label>Selecciona fecha</label>
+                        <input class="inputDate" type="date" name="date">
+                        <label>Selecciona el archivo requerido (C.V correspondiente)</label>
+                        <input class="inputFile" type="file" name="file">
+                    </div>
+                    <div>
+                        <!--SELECT & OPTION-->
+                        <label>Selecciona tipo de usuario</label>
+                        <select class="formularioInput" name="type=-of-user">
+                            <option value="user1">Administrador</option>
+                            <option value="user2">Comprador</option>
+                            <option value="user3">Trabajador independiente</option>
+                            <option value="user4">Técnico</option>
+                        </select>
+                    </div>
+                    <div>
+                        <!--DATALIST & OPTION-->
+                        <label>Referente</label>
+                        <input class="formularioInput" list="referente" placeholder="Selecciona una opción">
+                        <datalist id="referente" name="referente">
+                            <option value="Un amigo/a">Ya ha enviado sus datos</option>
+                            <option value="Lo vi en un anuncio">Referente a un trabajo</option>
+                            <option value="Una empresa">Soy trabajador de la instutución</option>
+                            <option value="Otro">Sin especificar</option>
+                        </datalist>
+                    </div>
+            </fieldset>
+            <!--TEXTAREA-->
+            <fieldset>
+                <legend>¿TIENES ALGUNA QUEJA O COMENTARIO? DÉJALO AQUÍ ABAJO</legend>
+                <textarea class="textArea" rows="8" placeholder="Deja tu comentario aquí"></textarea>
+                <div>
+            </fieldset>
+            <!--CHECKBOX & SUBMIT-->
+            <div>
+                <label class="checkbox">Acepto términos y condiciones.
+                    <input type="checkbox" id="checkbox">
+                </label>
+                <input class="inputSubmit" type="submit" value="Enviar">
+            </div>
+    </form>
+    </div>
+
+    <h2>Sección 5: Caja.</h2>
+    <div class="box">
+        <div class="opaco">
+        </div>
+    </div>
+
+    <h2>Sección 6: Card.</h2>
+    <div class="card">
+        <h2 class="cardTitle">Lucinda Domínguez</h2>
+        <h3 class="cardSubtitle">Estudiante autodidacta en desarrollo web</h3>
+        <p class="cardText">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat id placeat voluptates
+            voluptatibus facilis est accusamus a voluptatem consequatur, harum pariatur ad impedit magnam nulla.
+            Molestias facilis vel expedita porro!</p>
+    </div>
+
+    <h2>Sección 7: Sombras.</h2>
+    <div class="card2">
+        <img class="yoMerengues" src="/public/yo.jpeg" alt="yoMerengues">
+        <h3 class="card2Title">LucindaDev</h3>
+        <h4 class="card2Subtitle">Estudiante de Desarrollo Web</h4>
+        <p class="card2Text">Me gusta la música, los gatitos, ver series y pasar tiempo en casa. Disfruto del trabajo en
+            silencio o con música de fondo, soy fanática del orden y un buen aroma. Amo a mi marido, es lo mejor que me
+            ha pasado!!! Él me ha enseñado muchísimo sobre programación, es mi inspiración y sobretodo, mi ídolo, lo amo
+            con todo mi corazón, se merece lo mejor y YO se lo voy a dar.</p>
+    </div>
+    
+    <h2>Sección 8. Details y Summary</h2>    
+    <div>
+        <details>
+            <summary>¿Qué temas he aprendido?</summary>
+            <ul>
+                <li >Etiquetas HTML</li>
+                <li >Estructura de una página web</li>
+                <li class="details">CSS y tipos de estilos</li>
+            </ul>
+        </details>
+    </div>
+</body>
+
+</html>

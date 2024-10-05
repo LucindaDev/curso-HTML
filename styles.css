@@ -1,0 +1,223 @@
+:root {
+    color-scheme: dark;
+}
+body {
+    margin: 0;
+}
+h1 {
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+h2 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+.principal {
+    max-width: 500px;
+    margin: 0 auto;
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 200;
+    text-align: justify;
+    color: greenyellow;
+    font-style: italic;
+    line-height: 1.5;
+}
+.lista {
+    list-style: circle;
+    font-size: 20px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+.enlace {
+    background-color: rgb(171, 202, 117);
+    text-emphasis: none;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+.fotoPerfil1 {
+    height: 275px;
+    width: 250px;
+    border-radius: 50%;
+    display: flex;
+    margin: auto;
+}
+.formulario {
+    max-width: 600px;
+    margin: auto;
+    padding: 10px 20px;
+    background-color: transparent;
+    box-shadow: 0 0 15px rgba(94, 88, 88, 0.393);
+    border-radius: 3px;
+}
+fieldset {
+    margin: 10px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    border: none;
+    border: 2px solid rgba(255, 255, 255, 0.092);
+}
+legend {
+    letter-spacing: 1px;
+}
+.formTitle {
+    font-size: 24px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+    letter-spacing: 1px;
+}
+.formularioInput, textArea {
+    width: 100%;
+    margin: 5px 0;
+    padding: 6px 5px;
+    box-sizing: border-box;
+    background-color: transparent;
+    border: none;
+    border: 1px solid rgba(255, 255, 255, 0.049);
+    font-family: monospace;
+}
+option {
+    background-color: black;
+}
+.inputDate{
+    margin: 5px 0;
+    background-color: rgba(54, 54, 54, 0.286);
+    border: 1px solid rgba(54, 54, 54, 0.906);
+    padding: 2px 6px;
+    box-sizing: border-box;
+    display: block;
+}
+.inputFile {
+    margin: 5px 0;
+    background-color: rgba(54, 54, 54, 0.286);
+    border: 1px solid rgba(54, 54, 54, 0.906);
+    box-sizing: border-box;
+}
+.textArea {
+    min-width: 200px;
+    resize: none;
+    min-height: 100px;
+}
+.checkbox {
+    margin-top: 40px;
+    display: block;
+}
+.inputSubmit {
+    margin: 5px 0;
+    margin-top: 10px;
+    background-color: rgba(255, 255, 255, 0.399);
+    border: 1px solid rgba(54, 54, 54, 0.906);
+    padding: 3px 5px;
+    box-sizing: border-box;
+    display: flex;
+}
+label {
+    font-size: 15px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.card {
+    background: linear-gradient(rgb(104, 137, 47), rgb(202, 243, 141));
+    color: rgb(0, 0, 0);
+    width: 400px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    border: 5px solid rgb(50, 88, 13);
+    border-radius: 12px;
+}
+.cardTitle {
+    padding: 5px;
+    font-size: 25px;
+    margin: auto;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+}
+.cardSubtitle {
+    padding: 0;
+    margin: 5px;
+    letter-spacing: 1px;
+    font-family:Arial, Helvetica, sans-serif
+}
+.cardText {
+    margin: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: justify;
+    padding: 10px;
+    margin-top: 5px;
+}
+.box {
+    width: 44%;
+    height: 500px;
+    margin: 0;
+    margin: auto;
+    padding: auto;
+    box-sizing: content-box;
+    background: url(/public/FotoPerfil2.webp) center / contain fixed rgba(188, 255, 101, 0.69);
+}
+.opaco {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.214);
+}
+.card2 {
+    background: rgb(86, 116, 68);
+    width: 400px;
+    margin: auto;
+    margin-bottom: 50px;
+    padding: 10px 20px;
+    border: 6px solid rgb(132, 158, 87);
+    box-shadow: 0px 0px 20px 0px rgba(248, 246, 246, 0.267);
+    border-radius: 20px;
+    text-align: center;
+}
+.yoMerengues {
+    width: 150px;
+    margin: 0;
+    border-radius: 50%;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.301);
+}
+.card2Title {
+    margin: 0;
+    margin-top: 5px;
+    color: black;
+    text-align: center;
+    font-family: monospace;
+    font-size: 24px;
+    letter-spacing: 2px;
+    text-shadow: 0 0 3px rgba(0, 0, 0, 0.332);
+}
+.card2Subtitle {
+    margin: 0;
+    margin-top: 5px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-family: monospace;
+    font-size: 18px;
+    letter-spacing: 1px;
+    text-shadow: 0 0 2px rgba(0, 0, 0, 0.345);
+}
+.card2Text {
+    margin: 0;
+    margin-top: 5px;
+    color: black;
+    text-align: justify;
+    font-size: 14px;
+    font-family:monospace;
+    text-shadow: 0 0 1px rgba(0, 0, 0, 0.368);
+}
+details {
+    margin: auto;
+    width: 300px;
+    margin-bottom: 50px;
+    background-color: rgb(97, 151, 97);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+summary {
+    background-color: rgb(76, 114, 76);
+    padding: 10px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+.details {
+    padding-bottom: 15px;
+}
