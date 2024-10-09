@@ -18,17 +18,18 @@
     <h2>Sección 1: Texto y enlace.</h2>
     <div class="principal">
         <h2>Subtítulo</h2>
-        <p>Lorem <strong>ipsum</strong> dolor sit amet consectetur adipisicing elit. Itaque accusamus ut quo consectetur
+        <p class="parrafo">Lorem <strong class="parrafo">ipsum</strong> dolor sit amet consectetur adipisicing elit. Itaque accusamus ut quo consectetur
             ipsum atque nulla eos! Impedit odit nesciunt delectus assumenda excepturi, totam ab illum, explicabo rem
             ullam aperiam?</p>
-        <a href="https://github.com/LucindaDev?tab=repositories" class="enlace" target="_blank">Enlace a mi GitHub!</a>
-        <!-- "_blank" Se utiliza para abrir un enlace en otra pestaña. -->
+        <a href="https://github.com/LucindaDev?tab=repositories?" class="enlace" target="_blank" rel="noreferrer" aria-label="Enlace al GitHub de Lucinda">Enlace a mi GitHub!</a>
+        <!-- "_blank" Se utiliza para abrir un enlace en otra pestaña. 
+        "aria-label" permite leer la funcion del enlace mediante una tecnología de voz para discapacitados. -->
     </div>
 
     <h2>Sección 2: Lista.</h2>
     <div>
         <ol class="lista">
-            <li>Gato</li>
+            <li>Gato <strong>negro</strong></li>
             <li>Perro</li>
             <li>Caballo</li>
             <li>Capibara</li>
@@ -115,9 +116,11 @@
             </fieldset>
             <!--CHECKBOX & SUBMIT-->
             <div>
-                <label class="checkbox">Acepto términos y condiciones.
+                <label class="checkbox">Acepto los <a class="terminos" href="https://www.roberthalf.com/cl/es/terminos-y-condiciones-de-uso-de-sitio-web" target="_blank" rel="noreferrer noopener nofollow">términos y condiciones.</a>
+                    <!--EL "noopener"/ "NOREFERRER"NO PERMITE AL NAVEGADOR ACCEDER AL WINDOW.OPENER Y EVITA PÁGINAS MALICIOSAS. EL "NOFOLLOW" SE DESLIGA DE LA PÁGINA PARA NO PERDER POSICIONAMIENTO EN EL NAVEGADOR.-->
                     <input type="checkbox" id="checkbox">
                 </label>
+                <label class="contactos">¿Necesitas ayuda? <a class="contacto" href="mailto: lucindadev@gmail.com">Mándanos un correo</a> ó <a class="contacto" href="tel:+526672293578">Llámanos</a>.</label>
                 <input class="inputSubmit" type="submit" value="Enviar">
             </div>
     </form>
@@ -127,6 +130,9 @@
     <div class="box">
         <div class="opaco">
         </div>
+    </div>
+    <div class="descargar">
+        <a class="descargar1" href="/public/FotoPerfil2.webp" download>Descargar imagen</a>
     </div>
 
     <h2>Sección 6: Card.</h2>
@@ -159,6 +165,49 @@
                 <li class="details">CSS y tipos de estilos</li>
             </ul>
         </details>
+    </div>
+    <h2>Sección 9. Tabla.</h2>
+    <div>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Producto</th>
+                    <th>Cantidad</th>
+                    <th>Precio</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Pepino</td>
+                    <td>5pz</td>
+                    <td>$50</td>
+                </tr>
+                <tr>
+                    <td>Cacahuate</td>
+                    <td>1kg</td>
+                    <td>$20</td>
+                </tr>
+                <tr>
+                    <td>Cebolla</td>
+                    <td>3pz</td>
+                    <td>$15</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <th>Total</th>
+                <td class="total" colspan="2">$85</td>
+            </tfoot>
+
+        </table>
+    </div>
+    <h2>Sección 10. Video.</h2>
+    <div>
+        <video controls muted src="/public/Video.mp4">
+            <track src="captions.vtt"
+            default kind="captions"
+            srclang="en" label="English">
+            Tu navegador no soporta el archivo.mp4
+        </video>
     </div>
 </body>
 
