@@ -13,8 +13,26 @@
 </head>
 
 <body>
+    <header>
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item">
+                    <a href="" class="nav__link">Home</a>
+                </li>
+                <li class="nav__item">
+                    <a href="" class="nav__link">About Me</a>
+                </li>
+                <li class="nav__item">
+                    <a href="" class="nav__link">Contact</a>
+                </li>
+                <li class="nav__item">
+                    <a href="" class="nav__link link--button">Log In</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
     <h1>Encabezado!!</h1>
-
+    
     <h2>Sección 1: Texto y enlace.</h2>
     <div class="principal">
         <h2>Subtítulo</h2>
@@ -25,6 +43,7 @@
         <!-- "_blank" Se utiliza para abrir un enlace en otra pestaña. 
         "aria-label" permite leer la funcion del enlace mediante una tecnología de voz para discapacitados. -->
     </div>
+
 
     <h2>Sección 2: Lista.</h2>
     <div>
@@ -132,7 +151,7 @@
         </div>
     </div>
     <div class="descargar">
-        <a class="descargar1" href="/public/FotoPerfil2.webp" download>Descargar imagen</a>
+        <a class="descargar1" href="/public/LucindaFachera.jpeg" download>Descargar imagen</a>
     </div>
 
     <h2>Sección 6: Card.</h2>
@@ -201,13 +220,19 @@
         </table>
     </div>
     <h2>Sección 10. Video.</h2>
-    <div>
+    <div class="video">
         <video controls muted src="/public/Video.mp4">
             <track src="captions.vtt"
             default kind="captions"
             srclang="en" label="English">
             Tu navegador no soporta el archivo.mp4
         </video>
+    </div>
+    <h2>Sección 11. Flexbox.</h2>
+    <div class="flexbox">
+        <div class="flex-item"></div>
+        <div class="flex-item"></div>
+        <div class="flex-item"></div>
     </div>
 </body>
 
